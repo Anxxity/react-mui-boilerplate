@@ -30,7 +30,6 @@ end)
 RegisterNUICallback('getPlayerMoney', function(_, cb)
   local ped = PlayerPedId()
   local playerId = PlayerId()
-  --local fallbackMoney = math.floor(GetEntityHealth(ped) * 25 + playerId * 100)
   local money = ESX.PlayerData.money
   cb(money)
 end)
